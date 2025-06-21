@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aska"
-version = "0.1.0"
+version = "0.0.1"
 description = "Base for python libs"
 authors = [{name = "Gustavo Delai Onzi Da Silva", email = "gustavodelai111317@gmail.com"}]
 license = {text = "MIT"}
