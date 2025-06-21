@@ -1,5 +1,6 @@
-## 0.1.0 (2025-06-14)
+## 0.1.0 (2025-06-21)
 
 ### Feat
 
-- initial commit
+- base lib architecture
+- skeleton
