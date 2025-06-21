@@ -5,13 +5,9 @@ from aska.sender.rabbitmq_task_sender import RabbitMQTaskSender
 
 class AskaFactory:
     @classmethod
-    def make_client(cls) -> PikaClient:
-        return PikaClient()
-
-    @classmethod
     def make_consumer(cls) -> RabbitMQTaskConsumer:
-        return RabbitMQTaskConsumer(client=cls.make_client())
+        return RabbitMQTaskConsumer(client=PikaClient())
 
     @classmethod
     def make_sender(cls) -> RabbitMQTaskSender:
-        return RabbitMQTaskSender(client=cls.make_client())
+        return RabbitMQTaskSender(client=PikaClient())
